@@ -1,0 +1,569 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Jost&display=swap');
+/* font-family: 'DM Serif Display', serif;
+font-family: 'Jost', sans-serif; */
+
+/* ANIMATION */
+
+
+
+/************** GENERAL ************/
+
+:root{
+    --primaryColor: #CDA274;
+    --titleColor: #292F36;
+    --contentColor: #4D5053;
+    --bgColor: #F4F0EC;
+}
+
+body{
+    font-family: 'Jost', sans-serif;
+}
+
+h1{
+    font-family: 'DM Serif Display', serif;
+    color: var(--titleColor);
+    font-size: 4rem;
+    width: 100%;
+}
+
+h2{
+    font-family: 'DM Serif Display', serif;
+    color: var(--titleColor);
+    font-size: 2rem;
+    width: 100%;
+    margin-top: 0;
+}
+
+h3{
+    font-family: 'DM Serif Display', serif;
+    color: var(--titleColor);
+    font-size: 1.2rem;
+    width: 100%;
+}
+
+p{
+    color: var(--contentColor);
+    font-size: 1rem;
+    line-height: 1.5rem;
+}
+
+a{
+    text-decoration: none;
+    color: var(--titleColor);
+}
+
+:visited, :link, :focus{
+    color: var(--titleColor);
+}
+
+button{
+    font-family: 'Jost', sans-serif;
+    font-weight: 500;
+    padding: 10px;
+    border: none;
+    background-color: var(--titleColor);
+    width: fit-content;
+    border-radius: 10px;
+    display: block;
+    color: white;
+    cursor: pointer;
+}
+
+button span{
+    color: var(--primaryColor);
+}
+
+.flex{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.paddings{
+    padding: 5% 15%;
+}
+
+.spaceBetween{
+    justify-content: space-between;
+}
+
+.itemCenter{
+    align-items: center;
+}
+
+.bold{
+    font-weight: 700;
+}
+
+.textCenter{
+    text-align: center;
+}
+
+.pictoRond{
+    background-color: var(--bgColor);
+    width: 60px;
+    height: 60px;
+    justify-content: center;
+    border-radius: 50%;
+    color: var(--primaryColor);
+}
+
+/* HEADER */
+
+header{
+    padding: 0 15%;
+    height: 7vh;
+    position: sticky;   /* sticky - reste collé à son parents */
+    top: 0;             /* sticky - indique l'emplacement où il reste collé */
+    background-color: var(--bgColor);
+    box-shadow: 0 2px 5px var(--primaryColor); /* valeurs : x, y, blur, color */
+    z-index: 1;
+}
+
+header img{
+    width: 15%;
+}
+
+header nav{
+    width: 40%;
+}
+
+/* FOOTER */
+
+footer{
+    gap: 5%;
+    padding: 5% 15% 2% 15%;
+}
+
+.gauche{
+    width: 25%;
+}
+
+.gauche img{
+    width: 35%;
+}
+
+.gauche nav{
+    width: 50%;
+
+}
+
+.copyright{
+    width: 100%;
+    margin-top: 5%;
+}
+
+/************* Index ************/
+
+/* HERO */
+
+.hero{
+    height: 93vh;
+    background-image: url(./assets/banniere.png); /* colle une image en fond */
+    background-size: cover; /* couvre la section */
+    background-position: bottom; /* cale l'image à partir du bas */
+    border-radius: 0 0 0 300px;
+}
+
+.hero div{
+    width: 40%;
+    margin-left: 15%;
+}
+
+/* VALEURES */
+
+.valeures div{
+    width: 26%;
+}
+
+/* CONTACT */
+
+.contact img{
+    width: 40%;
+    border-radius: 0 200px 0 100px;
+}
+
+.contact div{
+    width: 50%;
+}
+
+address{
+    width: 100%;
+    gap: 1.5rem;
+    margin-bottom: 1.5rem;
+}
+
+/* AVIS */
+
+.containerAvis{
+    width: 96%;
+    background-color: var(--bgColor);
+    padding: 5% 2%;
+    border-radius: 25px;
+    gap: 2rem;
+}
+
+.containerAvis img{
+    width: 30%;
+    border-radius: 50%;
+}
+
+.carteAvis{
+    width: 24%;
+    background-color: white;
+    border-radius: 25px;
+    padding: 2%;
+}
+
+.carteAvis div{
+    gap: 1.5rem;
+}
+
+.avis span{
+    font-family: 'DM Serif Display', serif;
+    color: var(--titleColor);
+    font-weight: 1.2rem;
+}
+
+/* PARTENAIRES */
+
+.partenaires{
+    justify-content: space-evenly;
+}
+
+.partenaires a{
+    width: 10%;
+}
+
+.partenaires a img{
+    width: 100%;
+}
+
+/* PROJETS */
+
+.carteProjet{
+    width: 40%;
+    margin-top: 7%;
+    gap: 1.2rem;
+}
+
+.carteProjet img{
+    width: 100%;
+}
+
+.projets p{
+    width: 100%;
+}
+
+.cuisine img{
+    border-radius: 0 80px 0 0;
+}
+
+.entree img{
+    border-radius: 80px 0 0 0;
+}
+
+.bureau img{
+    border-radius: 0 0 80px 0;
+}
+
+.salon img{
+    border-radius: 0 0 0 80px;
+}
+
+.carteProjet p{
+    margin: 0;
+}
+
+/* NEWSLETTER */
+
+.newsletterCadre{
+    width: 90%;
+    margin: auto;
+    background-color: var(--titleColor);
+    padding: 6%;
+    border-radius: 20px;
+}
+
+.newsletterCadre h2, .newsletter p{
+    color: white;
+}
+
+.newsletterCadre div{
+    justify-content: center;
+}
+
+input{
+    width: 300px;
+    border: none;
+    border-radius: 10px;
+}
+
+/************* SERVICES *************/
+
+/* hero */
+
+.heroServices{
+    height: 40vh;
+    background-image: url(./assets/assets-services/Photo.jpg);
+    background-size: cover;
+    background-position: center;
+    justify-content: center;
+    align-items: end;
+}
+
+.heroServices div{
+    background-color: white;
+    height: 15vh;
+    padding: 0 5%;
+    border-radius: 40px 40px 0 0;
+}
+
+/* détail */
+
+.valeuresServices div{
+    width: 26%;
+    justify-content: center;
+}
+
+/* procede */
+
+.cadreProcede{
+    background-color: var(--bgColor);
+    border-radius: 60px;
+    padding: 2% 10%;
+    gap: 5rem;
+}
+
+.procedeTitre{
+    width: 100%;
+}
+
+.containerProcede{
+    width: 100%;
+}
+
+.containerProcede img{
+    width: 47%;
+    border-radius: 0 100px 0 400px;
+}
+
+.descriptionProcede{
+    width: 47%;
+    gap: 3rem;
+}
+
+.descriptionProcede div{
+    width: 100%;
+}
+
+.descriptionProcede a{
+    color: var(--primaryColor);
+    font-size: 8rem;
+    font-family: 'DM Serif Display', serif;
+}
+
+.paire{
+    justify-content: flex-start;
+}
+
+.impaire{
+    justify-content: flex-end;
+}
+
+
+/*********** Projets *************/
+
+/* hero */
+
+.heroProjets{
+    height: 40vh;
+    background-image: url(./assets/assets-projet/baniere-projet.jpg);
+    background-size: cover;
+    background-position: center;
+    justify-content: center;
+    align-items: end;
+}
+
+.heroProjets div{
+    background-color: white;
+    height: 15vh;
+    padding: 0 5%;
+    border-radius: 40px 40px 0 0;
+}
+
+/* main */
+
+.borderEgal img{
+    border-radius: 25px;
+}
+
+.borderArrondi img{
+    border-radius: 25px 25px 25px 250px;
+}
+
+.table{
+    width: 100%;
+    grid-area: 3 / 1 / 4 / 3;
+}
+
+.chambre{
+    width: 100%;
+}
+
+.gridProjets{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    grid-column-gap: 1.5rem;
+    grid-row-gap: 1.5rem;
+}
+
+.imgClic{
+    width: 100%;
+}
+ 
+/* position dans la grid : début haut / début gauche / fin haut / fin bas */
+.ch1 { grid-area: 1 / 1 / 2 / 2; } 
+.ch2 { grid-area: 1 / 2 / 2 / 3; }
+.ch3 { grid-area: 2 / 1 / 3 / 2; }
+.ch4 { grid-area: 2 / 2 / 3 / 3; }
+.ch5 { grid-area: 4 / 1 / 5 / 2; }
+.ch6 { grid-area: 4 / 2 / 5 / 3; }
+
+
+/*************** Mini projet ****************/
+
+/* hero */
+.heroMiniProjets{
+    height: 40vh;
+    background-image: url(./assets/assets-mini-projet/baniere-projet-minimal-bedroom.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+/* main */
+
+main img{
+    width: 100%;
+    margin-top: 6rem;
+}
+
+.client{
+    background-color: var(--bgColor);
+    border-radius: 25px;
+    width: 35%;
+    justify-content: center;
+    gap: 2rem ;
+    padding: 3% 0;
+}
+
+.clientBold{
+    font-weight: bold;
+}
+
+.chDetail{
+    width: 60%;
+}
+
+/*************** Contact *************/
+/* hero */
+
+.heroContact{
+    height: 40vh;
+    background-image: url(./assets/banniere-contact.jpg);
+    background-size: cover;
+    background-position: center;
+    justify-content: center;
+    align-items: end;
+}
+
+.heroContact div{
+    background-color: white;
+    height: 15vh;
+    padding: 0 5%;
+    border-radius: 40px 40px 0 0;
+}
+
+@media screen and (max-width: 575px){
+
+    .paddings{
+        padding: 5% 10%;
+    }
+
+    header { padding: 0 5%;}
+
+    header nav { width: 80%;}
+
+    h1{
+        font-size: 2.5rem;
+    }
+
+    main img{
+        margin-top: 0;
+    }
+
+    .hero div{
+        width: 80%;
+        margin-left: 10%;
+    }
+
+    .hero div p{
+        margin: 50px 0;
+    }
+
+    .valeures div{
+        width: 100%;
+        margin-top: 5vh;
+    }
+
+    .contact{
+        justify-content: center;
+        flex-direction: column-reverse;
+        margin-bottom: 5vh;
+    }
+
+    .contact div{
+        width: 100%;
+        text-align: center;
+        justify-content: center;
+    }
+
+    .contact img{
+        width: 70%;
+        margin-bottom: 3vh;
+    }
+
+    .containerAvis{
+        justify-content: flex-end;
+        padding: 5% 5%;
+    }
+
+    .containerAvis img{
+        position: relative;
+        left: -50px;
+    }
+
+    .carteAvis{
+        width: 80%;
+    }
+
+    .partenaires{
+        justify-content: space-between;
+    }
+
+    .projets{
+        justify-content: center;
+    }
+
+    .projets>div{
+        width: 80%;
+    }
+
+    .gauche {width: 100%; margin-bottom: 32px;}
+
+    .valeuresServices { flex-direction: column;}
+    .valeuresServices div {width: 100%; margin-bottom: 40px;}
+
+    .procedeTitre {margin-top: 32px;}
+
+}
