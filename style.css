@@ -566,4 +566,8 @@ main img{
 
     .procedeTitre {margin-top: 32px;}
 
+    .miniProjetDetail>div{width: 100%;}
+
+    .miniProjetDetail .client {margin-bottom: 32px;}
+
 }
