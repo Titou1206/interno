@@ -53,6 +53,10 @@ a{
 }
 
 :visited, :link, :focus{
+    color: var(--titleColor);
+}
+
+button:visited, button:link, button:focus{
     color: white;
 }
 
@@ -205,6 +209,7 @@ address{
 .containerAvis img{
     width: 30%;
     border-radius: 50%;
+    margin-top: 0;
 }
 
 .carteAvis{
@@ -402,13 +407,13 @@ input{
     border-radius: 25px 25px 25px 250px;
 }
 
+.chambre{
+    width: 100%;
+}
+
 .table{
     width: 100%;
     grid-area: 3 / 1 / 4 / 3;
-}
-
-.chambre{
-    width: 100%;
 }
 
 .gridProjets{
@@ -499,6 +504,8 @@ main img{
         font-size: 2.5rem;
     }
 
+    h3 {font-size: 1.1rem;}
+
     main img{
         margin-top: 0;
     }
@@ -541,7 +548,7 @@ main img{
 
     .containerAvis img{
         position: relative;
-        left: -50px;
+        left: -15%;
     }
 
     .carteAvis{
@@ -573,4 +580,25 @@ main img{
 
     .descriptionProcede, .containerProcede img {width: 90%;}
 
+    .service-impaire{flex-direction: column-reverse;}
+
+    
+    
+    .gridProjets{
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(7, 1fr);
+    }
+
+    /* position dans la grid : début haut / début gauche / fin haut / fin bas */
+    .ch1 { grid-area: 1 / 1 / 2 / 2; } 
+    .ch2 { grid-area: 2 / 1 / 3 / 2; }
+    .ch3 { grid-area: 3 / 1 / 4 / 2; }
+    .ch4 { grid-area: 4 / 1 / 5 / 2; }
+    .table { grid-area: 5 / 1 / 6 / 2; }
+    .ch5 { grid-area: 6 / 1 / 7 / 2; }
+    .ch6 { grid-area: 7 / 1 / 8 / 2; }
+
+    .table {gap: 0;}
+
+    .contact address {justify-content: center;}
 }
